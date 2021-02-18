@@ -44,21 +44,13 @@ console.log(getDefaultValues('hihihih'));
 
 // Write a function that behaves differently depending on the nr of arguments being passed
 
-function diffBehave(...words) {
-  const areNumbers = words.every(function (element) {
-    return typeof element === "number";
-  });
-  const areStrings = words.every(function (element) {
-    return typeof element === "string";
-  });
-  if (areStrings)
-    return `You offered me ${words.length} strings and i will sort them for you : ${words.sort()} `;
-  if (areNumbers)
-    return `You offered me ${
-      words.length
-    } numbers [${words}] and their sum is : ${words.reduce((a, b) => a + b)} `;
-  else
-    return `You gave me ${words.length} random tdataTypes values and they are : ${words} `;
-}
+/*function optionsTest(...args) {
+  const stringValue = args.stringValue || "string default value";
+  const boolValue = !!opts.boolValue; // coerces value to boolean with a double negation pattern
+  const numericValue = opts.numericValue === undefined ? 123 : opts.numericValue;
 
-console.log(diffBehave("a", "m","w", "v", "a"));
+  return "{x:" + x + ", y:" + y + ", stringValue:'" + stringValue + "', boolValue:" + boolValue + ", numericValue:" + numericValue + "}";
+
+}
+console.log(optionsTest(2, 'jdskfdsf', 78));
+*/
