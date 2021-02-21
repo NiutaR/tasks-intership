@@ -54,4 +54,18 @@ function lastElement() {
 console.log(lastElement());
 
 //Write a function that will flatten an array without using flat()
+const flatten = function(arr, result = []) {
+    for (let i = 0,length = arr.length; i < length; i++) {
+        const value = arr[i];
+        if (Array.isArray(value)) {
+            flatten(value, result);
+        }
+        else {
+            result.push(value);
+        }
+    }
+    return result;
+};
+console.log(flatten(Array('red', 'black', [19, 98,33])));
+
 //Write a function to shuffle an array
