@@ -68,11 +68,34 @@ listOfBooks.add();
 console.log(listOfBooks);
 */
 
-class BookList {
+class BookList { //Parent Class
+    constructor(markedRead, markedNotReadYet, readBooks, unreadBooks, nextRead, currentRead, lastBook, allBooks) {
+        this.markedRead = 0;
+        this.markedNotReadYet = 0;
+        this.readBooks = [];
+        this.unreadBooks = [];
+        this.nextRead = nextRead;
+        this.currentRead = currentRead;
+        this.lastBook = lastBook;
+        this.allBooks = [];
+    }
 
+    getMarkedRead() {
+        console.log(this.markedRead);
+    }
+    getNotReadYet() {
+        return this.markedNotReadYet.join(',')
+    }
 }
+
 class Book {
-    
+    constructor(title, genre, author, readable, readDate) {
+        this.title = title;
+        this.genre = genre;
+        this.author = author;
+        this.readable = readable;
+        this.readDate = readDate;
+    }
 }
 
 
