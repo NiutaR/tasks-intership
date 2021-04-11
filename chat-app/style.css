@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #90b4ae;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login,
+.form-password {
+    display: block;
+    margin-bottom: 15px;
+    min-width: 250px;
+    min-height: 30px;
+    padding-left: 10px;
+}
+
+.form-btn {
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #232049;
+    outline: none;
+    border: 1px solid #436da3;
+    transition-duration: .3s;
+}
+
+.form-btn:hover {
+    background-color: #444b86;
+    color: #fff;
+}
+
+label {
+    display: block;
+    color: bisque;
+    margin-bottom: 4px;
+}
+
+.chat__message {
+    display: block;
+}
+
+.chat {
+    margin-top: 100px;
+}
+
+.chat__header {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    min-height: 50px;
+    padding-left: 10px;
+    border: 1px solid white;
+}
+
+.chat__user-name {
+    display: block;
+    color: rgb(45, 66, 95);
+}
+
+.chat__messages {
+    min-height: 400px;
+    border: 1px solid white;
+}
+
+.chat__first-user,
+.chat__second-user {
+    display: flex;
+    min-height: 50px;
+}
+
+.chat__first-user {
+    align-items: center;
+    padding-left: 15px;
+}
+
+.chat__second-user {
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.chat__message {
+    display: block;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 6px;
+    color: white;
+}
+
+.chat__message_first {
+    background: #777091;
+}
+
+.chat__message_second {
+    background: #777091;
+}
+
+.chat__insert {
+    display: flex;
+}
+
+.chat__input {
+    background: #696aa5;
+    outline: none;
+    border: 1px solid white;
+    min-height: 35px;
+    color: white;
+    padding-left: 10px;
+    min-width: 85%;
+    flex-grow: 1;
+}
+
+.chat__btn {
+    min-width: 10%;
+    min-height: 35px;
+    border: 1px solid white;
+    color: white;
+    background: #5c5f8a;
+    outline: none;
+}
+
+.chat__btn:hover {
+    background: #7d8897;
+    cursor: pointer;
+}
+
+.d-hidden {
+    display: none;
+}
+
+.d-visible {
+    display: block;
+}
